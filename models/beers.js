@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-var commentSchema = new Schema({
+const commentSchema = new mongoose.Schema({
     content: String
   }, {
     timestamps: true
