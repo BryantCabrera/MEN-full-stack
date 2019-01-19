@@ -12,7 +12,7 @@ router.get('/', (req, res) => {
 
 //New Route
 router.get('/new', (req, res) => {
-    
+    res.render('../views/beer/new.ejs');
 });
 
 //Create Route
