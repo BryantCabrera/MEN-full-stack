@@ -10,6 +10,8 @@
                 <li><a href="/beers/<%= beer._id %>"><%= beer.name %></a>, a <%= beer.style %>, served at <%= beer.bars %>.  People say it's <%= beer.comments %>.</li>
             <% }); %>
         </ul>
+
+        <a href="/beers/new" alt="Create New Beer Page" title="Create New Beer Page">Create New Beer</a>
     </main>
 
 <%- include('../partials/footer') %>
