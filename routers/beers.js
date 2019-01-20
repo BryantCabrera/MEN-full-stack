@@ -61,7 +61,14 @@ router.get('/:id', (req, res) => {
 
 //Delete Route
 router.delete('/:id', (req, res) => {
-    
+    Beer.findOneAndRemove(req.params.id, (err, deletedBeer) => {
+        if(err) {
+            res.send(err);
+        } else {
+            console.log(deletedBeer);
+            res.redirect('/beers');
+        }
+    });
 });
 
 module.exports = router;
