@@ -11,7 +11,9 @@
         People say it's <%= beer.comments %>.
         </p>
 
-
+        <form action="/beers/<%= beer._id %>?_method=DELETE" method="POST">
+            <button type="submit">Delete <%= beer.name %></button>
+        </form>
         <a href="/beers">Beers Index Page</a><br>
     </main>
 
