@@ -1,0 +1,20 @@
+<%- include('../partials/header', {
+    title: `beer.name 's Beer Update Page`
+}) %>
+
+    <main>
+        <h1><%= beer.name %>'s Beer Update Page</h1>
+
+        <form action="/beers/<%= beer._id %>?_method=PUT" method="POST">
+            Name: <input type="text" name="name" value="<%= beer.name %>"><br>
+            Style: <input type="text" name="style" value="<%= beer.style %>"><br>
+            Bars: <input type="text" name="bars" value="<%= beer.bars %>"><br>
+            Comments: <input type="text" name="comments" value="<%= beer.comments %>"><br>
+
+            <button type="submit">Update <%= beer.name %> Beer</button>
+        </form>
+
+        <a href="/beers">Beers Index Page</a><br>
+    </main>
+
+<%- include('../partials/footer') %>
