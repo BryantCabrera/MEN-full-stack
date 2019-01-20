@@ -1,0 +1,16 @@
+<%- include('../partials/header', {
+    title: `<%= beer.name %>'s Beer Show Page`
+}) %>
+
+    <main>
+        <h1><%= beer.name %>'s Beer Show Page</h1>
+        <a href="/beers">Beers Index Page</a><br>
+
+        <p>
+        <%= beer.name %> is a <%= beer.style %> style beer.<br>
+        <%= beer.name %> is served at <%= beer.bars %>.<br>
+        People say it's <%= beer.comments %>.
+        </p>
+    </main>
+
+<%- include('../partials/footer') %>

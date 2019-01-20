@@ -1,5 +1,5 @@
 <%- include('../partials/header', {
-    title: 'Beer IndexPage'
+    title: 'Beer Index Page'
 }) %>
 
     <main>
@@ -7,7 +7,7 @@
 
         <ul>
             <% beers.forEach( beer => { %>
-                <li><%= beer.name %>, a <%= beer.style %>, served at <%= beer.bars %>.  People say it's <%= beer.comments %></li>
+                <li><%= beer.name %>, a <%= beer.style %>, served at <%= beer.bars %>.  People say it's <%= beer.comments %>.</li>
             <% }); %>
         </ul>
     </main>
