@@ -1,0 +1,15 @@
+<%- include('../partials/header', {
+    title: 'Beer IndexPage'
+}) %>
+
+    <main>
+        <h1>Beer Index Page</h1>
+
+        <ul>
+            <% beers.forEach( beer => { %>
+                <li><%= beer.name %>, a <%= beer.style %>, served at <%= beer.bars %>.  People say it's <%= beer.comments %></li>
+            <% }); %>
+        </ul>
+    </main>
+
+<%- include('../partials/footer') %>
