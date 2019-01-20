@@ -14,6 +14,7 @@
         <form action="/beers/<%= beer._id %>?_method=DELETE" method="POST">
             <button type="submit">Delete <%= beer.name %></button>
         </form>
+        <a href="/beers/<%= beer._id %>/edit"><%= beer.name %>'s Edit Page</a><br>
         <a href="/beers">Beers Index Page</a><br>
     </main>
 

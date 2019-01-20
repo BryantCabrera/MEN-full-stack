@@ -47,7 +47,7 @@ router.get('/:id/edit', (req, res) => {
             });
             console.log('editing');
         }
-    })
+    });
 });
 
 //Update Route
