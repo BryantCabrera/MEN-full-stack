@@ -52,7 +52,14 @@ router.get('/:id/edit', (req, res) => {
 
 //Update Route
 router.put('/:id', (req, res) => {
-    
+    Beer.findByIdAndUpdate(req.params.id, req.body, {new: true}, (err, foundBeer) => {
+        if(err) {
+            res.send(err);
+        } else {
+            console.log(`${foundBeer} \n edit made.` );
+            res.redirect('/beers');
+        }
+    });
 });
 
 //Show Route
