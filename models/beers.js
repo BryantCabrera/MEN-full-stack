@@ -9,8 +9,10 @@ const commentSchema = new mongoose.Schema({
 const beerSchema = new mongoose.Schema({
     name: {type: String, reuired: true},
     style: String,
-    bars: [{type: mongoose.Schema.Types.ObjectId, ref: 'Bar'}],
-    comments: [commentSchema]
+    bars: String,
+    // [{type: mongoose.Schema.Types.ObjectId, ref: 'Bar'}],
+    comments: String
+    // [commentSchema]
 }, {
     timestamps: true
 });
