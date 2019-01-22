@@ -6,7 +6,7 @@ const app = express();
 const bodyParser = require('body-parser');
 const methodOverride = require('method-override');
 
-const beersRouter = require('./routers/beers')
+const beersRouter = require('./routers/beers');
 
 
 /********** MIDDLEWARE **********/
@@ -15,7 +15,7 @@ app.use(methodOverride('_method'));
 app.use(express.static('public'));
 
 
-/********** CONTROLLERS **********/
+/********** ROUTERS/CONTROLLERS **********/
 
 app.use('/beers', beersRouter);
 

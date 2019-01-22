@@ -1,10 +1,5 @@
 const mongoose = require('mongoose');
-
-const commentSchema = new mongoose.Schema({
-    content: String
-  }, {
-    timestamps: true
-});
+const commentSchema = require('./comments');
 
 const beerSchema = new mongoose.Schema({
     name: {type: String, reuired: true},

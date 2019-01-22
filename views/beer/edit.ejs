@@ -1,6 +1,6 @@
 <%- include('../partials/header', {
     title: `beer.name 's Beer Update Page`
-}) %>
+}); %>
 
     <main>
         <h1><%= beer.name %>'s Beer Update Page</h1>
@@ -11,7 +11,7 @@
             Bars: <input type="text" name="bars" value="<%= beer.bars %>"><br>
             Comments: <input type="text" name="comments" value="<%= beer.comments %>"><br>
 
-            <button type="submit">Update <%= beer.name %></button>
+            <button type="submit" class="btn">Update <%= beer.name %></button>
         </form>
 
         <a href="/beers">Beers Index Page</a><br>

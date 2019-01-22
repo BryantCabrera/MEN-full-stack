@@ -1,6 +1,6 @@
 <%- include('../partials/header', {
     title: `beer.name 's Beer Show Page`
-}) %>
+}); %>
 
     <main>
         <h1><%= beer.name %>'s Beer Show Page</h1>
@@ -14,8 +14,8 @@
         <form action="/beers/<%= beer._id %>?_method=DELETE" method="POST">
             <button type="submit">Delete <%= beer.name %></button>
         </form>
-        <a href="/beers/<%= beer._id %>/edit"><%= beer.name %>'s Edit Page</a><br>
-        <a href="/beers">Beers Index Page</a><br>
+        <a href="/beers/<%= beer._id %>/edit" class="btn"><%= beer.name %>'s Edit Page</a><br>
+        <a href="/beers" class="btn">Beers Index Page</a><br>
     </main>
 
 <%- include('../partials/footer') %>

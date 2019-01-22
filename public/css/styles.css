@@ -1,0 +1,105 @@
+/******************************/
+/********** Set-Up **********/
+/******************************/
+:root {
+    --hex-color1: rgba(247, 216, 87, 0.8);
+    --hex-color2: rgba(245, 200, 13, 1);
+    --hex-color3: rgba(194, 158, 10, 0.8);
+
+    --numberToken-color1: rgba(240, 240, 230, .7);
+    --numberToken-color1: rgba(255, 228, 196, .7);
+   
+    --ocean-color1: rgba(123, 201, 236, 0.8);
+    --ocean-color2: rgba(52, 178, 234, 1);
+    --ocean-color3: rgba(41, 139, 183, .8);
+    --ocean-color4: rgba(56, 91, 106, .8);
+    --ocean-color5: rgba(24, 81, 106, .8);
+
+    --road-color1: rgba(117, 103, 41, 0.8);
+    --road-color2: rgba(117, 96, 6, 0.8);
+
+    --settlement-color1: rgba(110, 118, 126, 0.8) ;
+
+    --player-0-color1: rgba(190, 0, 16, 1); /*#BE0010*/
+    --player-0-color2: rgb(151, 3, 15); /*#BE0010*/
+    --player-0-color3: rgb(122, 2, 12); /*#BE0010*/
+    --player-1-color1: rgba(8, 69, 123, 1); /*#08457B*/
+    --player-1-color2: rgb(6, 55, 97); /*#08457B*/
+    --player-1-color3: rgb(4, 35, 61); /*#08457B*/
+    --player-2-color1: rgba(25, 158, 60, 1); /*#199E3C*/
+    --player-2-color2: rgb(17, 112, 42); /*#199E3C*/
+    --player-2-color3: rgb(10, 70, 26); /*#199E3C*/
+    --player-3-color1: rgba(239, 222, 202, 1); /*#EFDECA*/
+    --player-3-color2: rgb(179, 165, 150); /*#EFDECA*/
+    --player-3-color3: rgb(134, 126, 115); /*#EFDECA*/
+
+    --dice-color1: rgb(229,0,40); /*#E50028*/
+    --dice-color2: rgb(251,236,59); /*#FBEC3B*/
+
+    --color-white: rgba(255, 255, 255, 1);
+    --color-black: rgba(0, 0, 0, 1);
+    --color-black-transparent: rgba(0, 0, 0, 0.5);
+    --background-color-light: rgba(207, 227, 244, .7);
+    --background-color-medium: rgba(83, 83, 83, 0.5);
+
+    --border-radius-small: .3rem;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: minion-pro, Arial;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.6rem;
+    color: var(--color-white);
+    background-image: linear-gradient(to bottom, var(--background-color-medium), var(--color-black-transparent));
+}
+
+/******************************/
+/********** Reusable **********/
+/******************************/
+.btn {
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 10rem;
+    color: var(--color-black);
+    box-shadow: .2rem .2rem .2rem var(--color-black);
+    background-color: var(--road-color2);
+    padding: .5rem;
+    margin: 1rem;
+    transition: all .2s;
+}
+
+    .btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 1rem 2rem rgba(var(--color-black),.2);
+    }
+
+        .btn:hover::after {
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+        }
+
+/******************************/
+/********** Reusable **********/
+/******************************/
+main {
+    height: 80vh;
+}
+
+ul {
+    margin: 1rem;
+}
